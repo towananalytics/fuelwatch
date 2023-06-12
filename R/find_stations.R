@@ -1,21 +1,17 @@
-
 #' Find Stations
-#' 
-#' @description
-#' The following uses postcode lat and long to estimate distances from the home
-#' location. This is not exact and generally assumes a post code's central
-#' location as the lat/long (i.e. center of each suburb)
-#' 
-#' @param home_lat 
-#' @param home_long 
+#'
+#' @description The following uses postcode lat and long to estimate distances
+#' from the home location. This is not exact and generally assumes a post code's
+#' central location as the lat/long (i.e. center of each suburb). #Find stations
+#' within reference area The following uses postcode lat and long to estimate
+#' distances from the home location. This is not exact and generally assumes a
+#' post code's central location as the lat/long (i.e. center of each suburb)
+#' @export
+#' @param home_lat
+#' @param home_long
 #' @param label the reference location to show on the map
 #' @param dist_from_home set the maximum distance from reference in kilometers
-#' @param radius 
-#' @importFrom geosphere distm
-#' @import tidyverse
-#' @import here here
-#' @import dplyr
-#'
+
 find_stations <- function(home_lat, 
                           home_long, 
                           label = "Reference Location",

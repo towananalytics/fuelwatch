@@ -13,18 +13,15 @@ find_stations(
 )
 }
 \arguments{
-\item{home_lat}{}
-
-\item{home_long}{}
-
 \item{label}{the reference location to show on the map}
 
 \item{dist_from_home}{set the maximum distance from reference in kilometers}
-
-\item{radius}{}
 }
 \description{
-The following uses postcode lat and long to estimate distances from the home
-location. This is not exact and generally assumes a post code's central
-location as the lat/long (i.e. center of each suburb)
+The following uses postcode lat and long to estimate distances
+from the home location. This is not exact and generally assumes a post code's
+central location as the lat/long (i.e. center of each suburb). #Find stations
+within reference area The following uses postcode lat and long to estimate
+distances from the home location. This is not exact and generally assumes a
+post code's central location as the lat/long (i.e. center of each suburb)
 }
