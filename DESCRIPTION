@@ -8,6 +8,7 @@ Description: Download and analyse Western Australia fuel pricing.
 Imports:
     dplyr,
     stringr,
+    geosphere,
     tidyverse,
     lubridate,
     here,
