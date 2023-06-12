@@ -30,7 +30,7 @@ find_stations <- function(home_lat,
                               label = label,
                               radius = radius)
   
-postcodes <- get_post_codes() %>% 
+postcodes <- get_postcodes() %>% 
   filter(type == "Delivery Area") %>% 
   # Duplicate the home location across all rows - used to calc distances
   bind_cols(home_location) %>%

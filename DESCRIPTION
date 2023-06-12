@@ -1,7 +1,7 @@
 Package: fuelwatch
 Type: Package
 Title: An API to the WA Fuel Watch Website
-Version: 0.1.0
+Version: 0.1.1
 Author: Nick Dawe
 Maintainer: The package maintainer <nick@towan.au>
 Description: Download and analyse Western Australia fuel pricing.
