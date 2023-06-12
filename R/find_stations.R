@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 #' Find Stations
 #' 
@@ -10,6 +11,22 @@
 #' @param home_long 
 #' @param label the reference location to show on the map
 #' @param dist_from_home set the maximum distance from reference in kilometers
+=======
+#Find stations within reference area
+
+# The following uses postcode lat and long to estimate distances from the home
+# location. This is not exact and generally assumes a post code's central
+# location as the lat/long (i.e. center of each suburb)
+
+
+
+#' Title
+#'
+#' @param home_lat 
+#' @param home_long 
+#' @param label 
+#' @param dist_from_home 
+>>>>>>> 17163fa23b1624199c087f28d6ae578f0f324036
 #' @param radius 
 #' @importFrom geosphere distm
 #' @import tidyverse
@@ -94,6 +111,33 @@ saveRDS(station_list_indexed, paste0(here::here("data"), "/station_list.RDS"))
 
 }
 
+<<<<<<< HEAD
+=======
+# Add the lat and long based on the full address for each unique station:
+# station_list_indexed <<- station_list_indexed[1:3, ] %>% 
+#   # drop_na() %>% 
+#   rowwise() %>%
+#   # Return lat and long from address - used for route mapping
+#   mutate(pos = get_pos(full_address)) %>%
+#   # rowwise() %>%
+#   # # Return lat and long from address - used for route mapping
+#   # mutate(lng = get_pos(full_address)[1],
+#   #        lat = get_pos(full_address)[2]) %>%
+#   ungroup() %>% 
+#   mutate(lng = as.numeric(unlist(pos$long)),
+#          lat = as.numeric(unlist(pos$lat))) %>% 
+#   select(-c(pos$long, pos$lat))
+#   drop_na() %>% # CAUTION: Some addresses cant be found so return NA for lat/long.
+#   # bind_cols(home_location) %>%
+#   # rowwise() %>%
+#   # # Calculate distances based on postcode lat/longs:
+#   # mutate(dist_from_home_km = geosphere::distm(c(lng, lat), 
+#   #                                             c(home_long, home_lat), 
+#   #                                             fun = distHaversine)/1000) %>% 
+#   ungroup()
+
+
+>>>>>>> 17163fa23b1624199c087f28d6ae578f0f324036
 stations_near_home <- station_list_indexed %>% 
   filter(POSTCODE %in% post_codes_near_home$postcode) %>% 
   bind_cols(home_location) %>%

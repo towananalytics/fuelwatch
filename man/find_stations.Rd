@@ -2,7 +2,11 @@
 % Please edit documentation in R/find_stations.R
 \name{find_stations}
 \alias{find_stations}
+<<<<<<< HEAD
 \title{Find Stations}
+=======
+\title{Title}
+>>>>>>> 17163fa23b1624199c087f28d6ae578f0f324036
 \usage{
 find_stations(
   home_lat,
@@ -17,14 +21,24 @@ find_stations(
 
 \item{home_long}{}
 
+<<<<<<< HEAD
 \item{label}{the reference location to show on the map}
 
 \item{dist_from_home}{set the maximum distance from reference in kilometers}
+=======
+\item{label}{}
+
+\item{dist_from_home}{}
+>>>>>>> 17163fa23b1624199c087f28d6ae578f0f324036
 
 \item{radius}{}
 }
 \description{
+<<<<<<< HEAD
 The following uses postcode lat and long to estimate distances from the home
 location. This is not exact and generally assumes a post code's central
 location as the lat/long (i.e. center of each suburb)
+=======
+Title
+>>>>>>> 17163fa23b1624199c087f28d6ae578f0f324036
 }
