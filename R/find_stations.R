@@ -13,7 +13,7 @@
 #' @param label the reference location to show on the map
 #' @param dist_from_home set the maximum distance from reference in kilometers
 #' @param radius 
-#' @importFrom geosphere distm
+#' @importFrom geosphere distm distHaversine
 #' @import tidyverse
 #' @import here here
 #' @import dplyr
