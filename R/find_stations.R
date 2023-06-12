@@ -8,7 +8,6 @@
 #' distances from the home location. This is not exact and generally assumes a
 #' post code's central location as the lat/long (i.e. center of each suburb)
 #' @export
-#' 
 #' @param home_lat 
 #' @param home_long 
 #' @param label the reference location to show on the map
