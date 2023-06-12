@@ -12,6 +12,7 @@ options(timeout = 60) # Change the timeout from the default 60 - files take long
 #' @param home_label 
 #' @param station_label 
 #' @param dist_from_home 
+#' @export
 #'
 #' @return leaflet map showing points connected via routes
 #' @import leaflet stringr bitops htmltools rjson dplyr R.utils
